@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/B67jKZxT/user_9303328.png">  <!-- PNG format -->
+
+
+</head>
+<body>
+
+    <main>
+        <div id="header" style="display: flex; justify-content: center; align-items: center;background-color:antiquewhite">
+            <p id="headerTitle">Welcome To My Static Webpage</p> 
+         </div>
+     
+         <nav id="navContainer" style="height: 20px;">
+     
+             <button><a  onclick="scrollToSection(event,'about')">About Me</a></button>
+             <button><a  onclick="scrollToSection(event,'services')">Services</a></button>
+             <button><a  onclick="scrollToSection(event,'prices')">Prices</a></button>
+             <button><a  onclick="scrollToSection(event,'contact')">Contact</a></button>
+     
+         </nav>
+     
+         <div id="about" style="display: flex;  justify-content: center; margin-top: 50px;">
+             <div id="aboutContainer">
+                 <p style="font-size: 30px;color: green;"><b>About This Website</b></p>
+                 <p>This is a modern webpage built with the help of HTML and CSS with color and layouts that are eye catchy</p>
+             </div>
+         </div>
+     
+     
+         <div id="services" style="display: flex;  justify-content: center; margin-top: 50px;">
+             <div id="serviceContainer">
+                 <p style="font-size: 30px;color: blue;"><b>Our Services</b></p>
+                 <p>We offer high-quality web design and development services to help bring your ideas to life</p>
+             </div>
+         </div>
+     
+     
+         <div id="prices" style="display: flex; justify-content: center; margin-top: 100px;">
+             <div id="tableContainer" style="width: 1200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                 <table style="width: 100%; border-collapse: collapse; text-align: center;">
+                     <thead style="background-color: #333; color: white;">
+                         <tr>
+                             <th>Services</th>
+                             <th>Price</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>Web Design</td>
+                             <td>$500</td>
+                         </tr>
+                         <tr style="background-color: #f8f8f8;">
+                             <td>Web Development</td>
+                             <td>$1000</td>
+                         </tr>
+                         <tr>
+                             <td>SEO Optimization</td>
+                             <td>$300</td>
+                         </tr>
+                         <tr style="background-color: #f8f8f8;">
+                             <td>Digital Marketing</td>
+                             <td>$400</td>
+                         </tr>
+                         <tr>
+                             <td>Copywriting Service</td>
+                             <td>$300</td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     
+     
+         <div id="contact">
+             <div style="display: flex; justify-content: center; margin-top: 100px;">
+                 <form onsubmit="showModal(event)" style=" background-color: #ccc; width: 50%; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                     <h2 style="color: rgb(129, 124, 124);">Contact Us</h2>
+             
+                     <div style="display:flex;flex-direction:column; margin-bottom: 10px;">
+                         <label for="name" style="margin-bottom: 5px;">Name</label>
+                         <input type="text" id="name" name="name" style="height: 40px; border: none; border-radius: 5px;" required>
+                     </div>
+             
+                     <div style="display:flex;flex-direction:column; margin-bottom: 10px;">
+                         <label for="email" style="margin-bottom: 5px;">Email</label>
+                         <input type="email" id="email" name="email" style="height: 40px; border: none; border-radius: 5px;" required >
+                     </div>
+             
+                     <div style="display:flex;flex-direction:column; margin-bottom: 10px;">
+                         <label for="message" style="margin-bottom: 5px;">Message</label>
+                         <textarea id="message" name="message" rows="4" style="height: 100px; border: none; border-radius: 5px;" ></textarea>
+                     </div>
+             
+                     <button type="submit"  id="submitBtn"
+                             style="width: 100%; padding: 10px; background-color: #090909; color: white; border: none; border-radius: 10px; cursor: pointer;">
+                         Submit
+                     </button>
+                 </form>
+             </div>
+             
+         </div>
+     
+     
+    </main>
+
+
+    <div id="modal" style="display:none;flex-direction: column; justify-content: center; align-items: center;">
+        <p>Thank You for messaging us...</p>
+        <img style="height: 300px;" src="./assets/thanks.jpeg" alt="">
+    </div>
+
+    <div style="height:100px; margin-top:100px; display: flex;flex-direction: column; justify-content: center; align-items: center;">
+        <p style="color:rgb(158, 154, 154);">© 2025 | My Static Website | Designed with ❤️</p>
+    </div>
+    
+    
+
+</body>
+</html>

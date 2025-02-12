@@ -1,0 +1,91 @@
+#headerTitle{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    margin-top: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navLinks{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#navContainer{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:darkgray;
+}
+
+#aboutContainer{
+    background-color: rgb(193, 222, 200, 0.5);
+    padding: 20px;
+    width: 1000px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgb(70, 74, 71, 0.3)
+}
+
+#serviceContainer{
+    background-color: rgba(89, 177, 218, 0.5);
+    padding: 20px;
+    width: 1000px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgb(70, 74, 71, 0.3)
+}
+
+#tableContainer{
+    background-color: rgba(237, 214, 180, 0.5);
+    padding: 20px;
+    width: 1200px;
+    border-radius: 20px;
+}
+
+#tableContainer td{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#tableContainer th{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+input, textarea:focus {
+    outline: none;
+}
+
+#submitBtn:hover{
+background-color: aqua;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav a{
+    color: white;
+}
+nav button{
+    background: none;
+    border: none;
+}
+
+
+/* Modal Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
